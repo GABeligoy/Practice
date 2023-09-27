@@ -1,67 +1,88 @@
 html, body {
-    min-width: 290px;
-    font-family: "Opens Sans", Arial,  sans-serif;
-    line-height: 1.5;
-  }
-  
-  
-  #navbar {
-    position: fixed;
-    min-width: 290px;
-    top: 0px;
-    left: 0px;
-    width: 300px;
-    height: 100%;
-    border-right: 2px solid black;
-  }
+  min-width: 290px;
+  font-family: "Opens Sans", Arial,  sans-serif;
+  line-height: 1.5;  
+}
+
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: 2px solid grey;
+}
+#navbar ul {
+  list-style-type: none;
+  height: 88%;
+  padding: 0;
+}
+#navbar li {
+  border-top: 1px solid black;
+}
+
+#navbar a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 30px;
+}
+#main-doc {
+  position: absolute;
+  margin-left: 320px;
+}
+header {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.8em;
+  margin-top: 10px;
+}
+#main-doc header {
+  text-align: left;
+  font-size: 1.5em; 
+}
+article {
+  margin: 20px;
+  font-size: 0.95em;
+  color: #4d4e53;
+}
+article li {
+  margin:15px 0px 0px 15px;
+}
+code {
+  display: block;
+  margin: 30px 20px;
+  padding: 15px 20px;
+  background-color:#e8f1f6;
+}
+a:visited {
+  color: black;
+}
+
+@media screen and (max-width: 815px) {
   #navbar ul {
-    list-style-type: none;
-    height: 88%;
+    border: 1px solid;
+    height: 207px;
   }
-  
-  #navbar a {
-    text-decoration: none;
+  #navbar {
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    border-bottom: 2px solid;
   }
   #main-doc {
-    position: absolute;
-    margin-left: 320px;
+    position: relative;
+    margin-left: 0;
+    margin-top: 270px;
   }
-  header {
-    font-weight: bold;
-    text-align: center;
-    font-size: 1.8em;
+}
+@media screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
   }
-  #main-doc header {
-    text-align: left;
-    font-size: 1.5em;
-  }
-  article {
-    margin: 20px;
-  }
-  
-  @media screen and (max-width: 815px) {
-    #navbar ul {
-      border: 1px solid;
-      height: 207px;
-    }
-    #navbar {
-      position: absolute;
-      top: 0;
-      padding: 0;
-      margin: 0;
-      width: 100%;
-      max-height: 275px;
-      border: none;
-      border-bottom: 2px solid;
-    }
-    #main-doc {
-      position: relative;
-      margin-left: 0;
-      margin-top: 270px;
-    }
-  }
-  @media screen and (max-width: 400px) {
-    #main-doc {
-      margin-left: -10px;
-    }
-  }
+}
