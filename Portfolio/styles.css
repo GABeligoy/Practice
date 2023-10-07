@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  a, ul {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+  }
+  #navbar {
+    background: #be3144;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px;
+  }
+  .navbar ul {
+    display: flex;
+  }
+  .navbar li {
+    padding: 15px;
+  }
+  .navbar a {
+    font-size: 1.5rem;
+  }
+  #welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;  
+    background: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  }
+  .welcome-section h1 {
+    font-size: 6rem;
+    color: white;
+  }
+  .welcome-section p {
+    font-size: 2rem;
+    font-style: italic;
+    color: #be3144;
+  }
+  .projects {
+    background: #45567d;
+    text-align: center;
+    padding: 10rem;
+  }
+  .project-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    /* grid-template-rows: 1fr; */
+    grid-gap: 2rem;
+    width: 100%;
+    max-width: 1280px;
+  }
+  .projects h2 {
+    font-size: 4rem;
+    color: white;
+    margin: -45px auto 5rem auto;
+    padding-bottom: 15px;
+    border-bottom: 2px dashed white;
+  }
+  .project-tile {
+    font-size: 1.5rem;
+  }
+  .project-tile img {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+  }
+  .project-title {
+    background: rgb(78, 75, 75);
+    padding: 20px;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgb(78, 75, 75);
+    width: 100%;
+    height: 100vh;  
+  }
+  .contact h2 {
+    font-size: 4rem;
+    color: white;
+  }
+  .contact p {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #be3144;
+    margin: 0 auto 20px auto;
+  }
+  .contact i {
+    margin: 0 10px 0 40px;
+  }
+  .contact a {
+    font-size: 1.5rem;
+  }
+  @media (max-width: 75em) {
+    html {
+      font-size: 60%;
+    }
+  }
